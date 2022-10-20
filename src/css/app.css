@@ -1,0 +1,199 @@
+:root {
+    --principal: #C4A70E;
+    --secundario: #CFDDB0;
+    --terciario: #7D6A06;
+    --gris: #666666;
+    --blanco: #ffffff;
+    --gris_obscuro: #333333;
+    --gris_claro: #d1e0e6;
+    --negro: #000000;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+#cabeceralogo {
+    height: 150px;
+    padding: 0% 2%;
+    background-color: var(--principal);
+}
+
+#cabeceralogo>div {
+    width: 960px;
+    margin: 0px auto;
+    padding-top: 45px;
+}
+
+#cabeceralogo h1 {
+    font: bold 54px Arial, sans-serif;
+    color: var(--blanco);
+}
+
+#menuprincipal {
+    width: 96%;
+    height: 50px;
+    padding: 0% 2%;
+    background-color: var(--secundario);
+}
+
+#menuprincipal>div {
+    width: 960px;
+    margin: 0px auto;
+}
+
+#menuprincipal li {
+    display: inline-block;
+    height: 35px;
+    padding-top: 15px;
+    margin-right: 5px;
+}
+
+#menuprincipal li:hover {
+    background-color: var(--principal);
+}
+
+#menuprincipal a {
+    font: bold 18px Arial, sans-serif;
+    color: var(--gris_obscuro);
+    text-decoration: none;
+    padding: 15px 10px 15px 10px;
+}
+
+main {
+    width: 96%;
+    padding: 2%;
+    background-image: url("fondo.png");
+}
+
+main>div {
+    width: 960px;
+    margin: 0px auto;
+}
+
+#articulosprincipales {
+    float: left;
+    width: 620px;
+    padding-top: 30px;
+    background-color: var(--blanco);
+    border-radius: 10px;
+}
+
+#infoadicional {
+    float: right;
+    width: 280px;
+    padding: 20px;
+    background-color: var(--gris_claro);
+    border-radius: 10px;
+}
+
+.citas {
+    display: grid;
+    cursor: pointer;
+}
+
+.cita {
+    text-decoration: none;
+    color: var(--negro);
+}
+
+#infoadicional h1 {
+    font: bold 18px Arial, sans-serif;
+    color: #333333;
+    margin-bottom: 15px;
+}
+
+.recuperar {
+    clear: both;
+}
+
+article {
+    position: relative;
+    padding: 0px 40px 20px 40px;
+}
+
+article time {
+    display: block;
+    position: absolute;
+    top: -5px;
+    left: -70px;
+    width: 80px;
+    padding: 15px 5px;
+    background-color: var(--terciario);
+    box-shadow: 3px 3px 5px rgba(100, 100, 100, 0.7);
+    border-radius: 5px;
+}
+
+.numerodia {
+    font: bold 36px Verdana, sans-serif;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.nombredia {
+    font: 12px Verdana, sans-serif;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+article h1 {
+    margin-bottom: 5px;
+    font: bold 30px Georgia, sans-serif;
+}
+
+article p {
+    font: 18px Georgia, sans-serif;
+}
+
+figure {
+    margin: 10px 0px;
+}
+
+figure img {
+    padding: 5px;
+    border: 1px solid;
+}
+
+.img {
+    height: 200px;
+}
+
+#pielogo {
+    width: 96%;
+    padding: 2%;
+    background-color: var(--principal);
+}
+
+#pielogo>div {
+    width: 960px;
+    margin: 0px auto;
+    background-color: var(--secundario);
+    border-radius: 10px;
+}
+
+.seccionpie {
+    float: left;
+    width: 270px;
+    padding: 25px;
+}
+
+.seccionpie h1 {
+    font: bold 20px Arial, sans-serif;
+}
+
+.seccionpie p {
+    margin-top: 5px;
+}
+
+.seccionpie a {
+    font: bold 16px Arial, sans-serif;
+    color: var(--gris);
+    text-decoration: none;
+}
+
+.seccionpie {
+    float: left;
+    width: 27.33%;
+    padding: 3%;
+}
