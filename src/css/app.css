@@ -7,11 +7,22 @@
     --gris_obscuro: #333333;
     --gris_claro: #d1e0e6;
     --negro: #000000;
+    --rojo: #ca2020;
+    --verde: #0d5f1f;
 }
 
 * {
     margin: 0px;
     padding: 0px;
+}
+
+html {
+    min-height: 100%;
+}
+
+.contenedor-sm {
+    max-width: 700px;
+    margin: 0 auto;
 }
 
 #cabeceralogo {
@@ -160,9 +171,12 @@ figure img {
 }
 
 #pielogo {
+    background-color: var(--principal);
     width: 96%;
     padding: 2%;
-    background-color: var(--principal);
+    
+    bottom: 0;
+    width: 100%;
 }
 
 #pielogo>div {
@@ -196,4 +210,91 @@ figure img {
     float: left;
     width: 27.33%;
     padding: 3%;
+}
+
+.formulario {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 30px 0;
+}
+.campo input {
+    padding: 10px 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--gris_claro);
+    width: 150px;
+    margin-left: 10px;
+}
+
+.ta-c {
+    text-align: center;
+}
+
+.btn {
+    padding: 10px 25px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--principal);
+}
+
+.btn:hover {
+    background-color: var(--secundario);
+    cursor: pointer;
+}
+
+.alertas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.alerta {
+    padding: 10px 0;
+    margin: 10px 0;
+    text-align: center;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.error {
+    background-color: var(--rojo);
+    color: var(--blanco);
+}
+
+.correcto {
+    background-color: var(--verde);
+    color: var(--blanco);
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    margin: 10px auto;
+    text-align: center;
+}
+
+.valor {
+    text-align: center;
+    width: 200px;
+}
+
+.title {
+    text-align: center;
+    font-weight: bold;
+    background-color: var(--gris_claro);
+}
+
+.valor-title, .anios-title {
+    font-weight: bold;
+    background-color: var(--gris_claro);
+    padding: 5px 10px;
+    width: 200px;
+    border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+
+.tabla {
+    margin-bottom: 20px;
 }

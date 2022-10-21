@@ -20,26 +20,32 @@
         <div>
             <ul>
                 <li><a href="index.html">Principal</a></li>
-                <li><a href="fotos.html">Fotos</a></li>
+                <li><a href="depreciacion.html">Depreciación</a></li>
                 <li><a href="videos.html">Videos</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
             </ul>
         </div>
     </nav>
-    <main>
-        <div>
-            <section id="articulosprincipales">
-                
-            </section>
-            <aside id="infoadicional">
-                <h1>Información Extra</h1>   
-                <section class="citas">
-                    <a href="#" class="cita">Cita Carrera de Vanguardia</a>
-                    <a href="#" class="cita">Cita Universidad de Competencia</a>
-                </section>
-            </aside>
-            <div class="recuperar"></div>
+    <main id="main">
+        <div class="alertas contenedor-sm">
+            <h2 class="ta-c">Depreciación de Autos</h2>
         </div>
+        <div class="contenedor-sm">
+            <form class="formulario">
+                <div class="campo">
+                    <label>Monto:</label>
+                    <input type="number" placeholder="Monto" name="monto" id="monto">
+                </div>
+                <div class="campo">
+                    <label>Años:</label>
+                    <input type="number" placeholder="Años" name="anios" id="anios">
+                </div>
+                <div class="campo">
+                    <button id="btn-calcular" type="button" class="btn">Calcular</button>
+                </div>
+            </form>
+        </div>
+        <div class="contenedor-sm" id="tabla"></div>
     </main>
     <footer id="pielogo">
         <div>
