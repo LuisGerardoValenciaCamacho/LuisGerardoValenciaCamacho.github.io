@@ -75,6 +75,7 @@ function mostrarDepreciacion(depreciacion, anios) {
     const btnLimpiar = document.createElement("button");
     btnLimpiar.textContent = "Limpiar";
     btnLimpiar.classList.add("btn");
+    btnLimpiar.classList.add("btn-secundario");
     btnLimpiar.addEventListener("click", limpiarDepreciacion);
     tabla.appendChild(div);
     tabla.appendChild(btnLimpiar);
