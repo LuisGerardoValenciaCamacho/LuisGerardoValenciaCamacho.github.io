@@ -56,6 +56,7 @@ function mostrarDepreciacion(depreciacion, anios) {
     divTitle.appendChild(titleDepreciacion);
     divTitle.appendChild(titleAnios);
     div.appendChild(divTitle);
+    anios = 1;
     depreciacion.forEach(valor => {
         const divValor = document.createElement("DIV");
         divValor.classList.add("flex");
@@ -68,7 +69,7 @@ function mostrarDepreciacion(depreciacion, anios) {
         pAnio.textContent = anios;
         pAnio.classList.add("valor")
         divValor.appendChild(pAnio);
-        anios -= 1;
+        anios += 1;
 
         div.appendChild(divValor);
     })

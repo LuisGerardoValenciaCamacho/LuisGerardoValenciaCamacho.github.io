@@ -310,3 +310,13 @@ figure img {
 .tabla {
     margin-bottom: 20px;
 }
+
+.fila-flex {
+    display: flex;
+    justify-content: center;
+    gap: 30px
+}
+
+.fila-flex p {
+    font-weight: bold;
+}
